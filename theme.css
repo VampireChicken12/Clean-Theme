@@ -1,7 +1,39 @@
+/* variables */
+:root {
+  --theme-name: "Clean";
+  --blackout: black;
+  --dark: #333;
+  --lighter: #666;
+  --bright: #ccc;
+  --background-blur: 0px;
+  --popup-blur: 0px;
+  --background-darkness: 0.75
+}
+
+  /* Dark Mode */
+  .appMount-3lHmkl {
+    --primary-color: rgba(0,0,0,var(--background-darkness));
+  }
+
+  .theme-dark {
+    --primary-color: rgba(0,0,0,0.75);
+    --secondary-color: rgba(0,0,0,0.6);
+    --tertiary-color: rgba(0,0,0,0.4);
+    --quaternary-color: rgba(0,0,0,0.7);
+  }
+
+  /* Light Mode */
+  .theme-light {
+    --primary-color: rgba(0,0,0,0.55);
+    --secondary-color: rgba(0,0,0,0.4);
+    --tertiary-color: rgba(0,0,0,0.2);
+    --quaternary-color: rgba(0,0,0,0.5);
+  } 
 /*---------------------------------------- BACKGROUND ----------------------------------------*/
-  body
+
+body
   {
-    background: url("https://i.imgur.com/DKlmJmH.jpg");
+    background:  var(--background-image);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -248,7 +280,7 @@
 /* BACKGROUND */
   .userPopout-3XzG_A
   {
-    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("https://i.imgur.com/DKlmJmH.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)),  var(--popup-background);
     padding-top: 20px;
     padding-bottom: 0px;
     padding-left: 10px;
@@ -528,7 +560,7 @@
 /* BACKGROUND */
   .contextMenu-HLZMGh
   {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("https://i.imgur.com/DKlmJmH.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),  var(--background-image);
     background-position: center top;
     background-size: cover;
   }
@@ -562,7 +594,7 @@
 /* MAIN BODY CHANGES */
   .emojiPicker-3m1S-j, .emojiPicker-3m1S-j
   {
-    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("https://i.imgur.com/DKlmJmH.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),  var(--background-image);
     background-position: center top;
     background-size: cover;
     border-radius: 15px;
